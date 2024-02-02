@@ -19,12 +19,21 @@ console.log(bill);
 // conditional return
 function result(marks) {
     if(marks >= 40) {
-        return 'passed';
+        return 'passed\n';
     }
     else {
-        return 'failed';
+        return 'failed\n';
     }
 }
 
 const final = result(43);
 console.log(final);
+
+
+// no return: undefined
+function no() {
+    console.log('no return: undefined');
+}
+
+let NO = no();
+console.log(NO);
